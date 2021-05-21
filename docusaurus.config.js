@@ -2,13 +2,13 @@
 module.exports = {
   title: 'Xatryx Documentations',
   tagline: 'just xatryx',
-  url: 'https://docs.xatryx.com',
+  url: 'https://docs-xatryx-com.onrender.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'xatryx', // Usually your GitHub org/user name.
+  projectName: 'xatryx-docs', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'My Site',
