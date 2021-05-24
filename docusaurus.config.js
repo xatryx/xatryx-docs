@@ -1,7 +1,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Xatryx Documentations',
-  tagline: 'just xatryx',
+  title: 'Xatryx',
+  tagline: 'Team #0073',
   url: 'https://docs-xatryx-com.onrender.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -11,9 +11,9 @@ module.exports = {
   projectName: 'xatryx-docs', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Xatryx Developer',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Xatryx Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -21,11 +21,11 @@ module.exports = {
           type: 'doc',
           docId: 'intro',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Documentations',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/xatryx',
           label: 'GitHub',
           position: 'right',
         },
@@ -38,7 +38,7 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Introduction',
               to: '/docs/intro',
             },
           ],
@@ -47,16 +47,12 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'GitHub',
+              href: 'https://github.com/xatryx',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/xatryx',
             },
           ],
         },
@@ -67,31 +63,30 @@ module.exports = {
               label: 'Blog',
               to: '/blog',
             },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Xatryx Developer. 
+      Built with Docusaurus.`,
     },
   },
   presets: [
     [
       '@docusaurus/preset-classic',
       {
+        // Debug defaults to true in dev, false in prod
+        debug: undefined,
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/xatryx/xatryx-docs/edit/master/website/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/xatryx/xatryx-docs/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
