@@ -77,7 +77,7 @@ module.exports = {
         // Debug defaults to true in dev, false in prod
         debug: undefined,
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve('./sidebars.jsx'),
           // Please change this to your repo.
           editUrl:
             'https://github.com/xatryx/xatryx-docs/edit/master/website/',

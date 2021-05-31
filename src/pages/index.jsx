@@ -8,7 +8,7 @@ import HomepageFeatures from '../components/HomepageFeatures';
 
 /**
  * Header for homepage
- * @constructor
+ * @return {html} Content for Hero Banner.
  */
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -16,7 +16,7 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <div className="row">
-          <div className="col col--6">
+          <div className="col col--4">
             <h1 className="hero__title">{siteConfig.title}</h1>
             <p className="hero__subtitle">{siteConfig.tagline}</p>
             <div className={styles.buttons}>
@@ -27,11 +27,10 @@ function HomepageHeader() {
               </Link>
             </div>
           </div>
-          <div className="col col--6">
+          <div className="col">
             <p className="hero__subtitle">
               <span>
-                We are part of<strong>Bangkit 2021</strong>
-                Programme, Team<strong>#0073</strong>.
+                We are part of <b>Bangkit 2021</b> Programme, Team <b>#0073</b>.
               </span>
               <br />
               <span>
@@ -39,8 +38,8 @@ function HomepageHeader() {
                 experiences.
               </span>
               <br />
-              <span className="font-bold">
-                ETA June <strong>4</strong><sup>th</sup>
+              <span>
+                <b>ETA June 4<sup>th</sup></b>
               </span>
             </p>
           </div>
@@ -51,14 +50,14 @@ function HomepageHeader() {
 }
 
 /**
- * Represents a book.
- * @constructor
+ * Return homepage.
+ * @return {html} Primary web content.
  */
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`Hello from ${siteConfig.tagline}`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
